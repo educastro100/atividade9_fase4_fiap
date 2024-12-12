@@ -1,0 +1,104 @@
+
+
+/* Adiciona a cor principal e configura a altura */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #29313C;
+    color: white;
+    font-family: 'K2D', sans-serif;
+}
+
+/* Informações do container */
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30%; /* Espaçamento do footer */
+}
+.logo {
+    margin-bottom: 20px;
+}
+.login-button {
+    width: 100%;
+    height: 7%;
+    margin: 2% 0;
+    /* font-weight: 800; */
+    background: linear-gradient(90deg, #8E957A, #A6C6A5); /* Gradiente invertido */
+    border: none;
+    color: white; /* Cor do texto */
+}
+.divider {
+    width: 100%;
+    border-top: 1px solid white;
+    margin: 20px 0;
+    position: relative;
+}
+.divider span {
+    background-color: #29313C;
+    padding: 0 10px;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-style: italic;
+}
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+.social-button {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px; /* Tamanho padronizado */
+}
+.social-button.facebook {
+    background-color: #3b5998; /* Cor do botão do Facebook */
+}
+.social-button.google {
+    background-color: #db4437; /* Cor do botão do Google */
+}
+.social-button i {
+    margin-right: 8px;
+}
+.footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+.italic-text {
+    font-style: italic;
+}
+.mid-vertical {
+    margin-bottom: 40%; 
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .container {
+        padding-bottom: 10%; /* Ajuste o espaçamento do footer para telas maiores */
+    }
+    .login-button {
+        width: 50%; /* Ajuste a largura do botão de login para telas maiores */
+    }
+    .social-button {
+        width: 150px; /* Ajuste o tamanho dos botões sociais para telas maiores */
+    }
+    .mid-vertical {
+        margin-bottom: 20%; /* Ajuste a margem inferior da imagem para telas maiores */
+    }
+}
